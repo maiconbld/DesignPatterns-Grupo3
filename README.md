@@ -95,4 +95,6 @@ Passos:
 - Em um produto real, combinar Strategy com outros padrões (Factory para criação de estratégias, Decorator para enriquecimento de respostas) aumenta flexibilidade.
 
 ## Autor(es)
-Thiago Guedes (trabalho de TCC) — Exemplo implementado por assistente automatizado.
+Maicon Dias - 082210032
+Pedro Vieira - 082210025
+Thiago Baptistella - 082210010
