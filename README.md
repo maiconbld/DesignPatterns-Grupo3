@@ -9,11 +9,9 @@ Os Padrões de Projeto tornam seu software mais flexível, mais robusto e mais f
 
 Os principais tipos de Padrões de Projeto são:
 
-Padrões Criacionais: Estes padrões especificam mecanismos de criação de objetos que tornam o sistema flexível e o código reutilizável. Eles se preocupam com a forma como os objetos são criados, o que torna o sistema independente de como seus objetos são instanciados.
-
-Padrões Estruturais: Estes padrões se preocupam com a estrutura de classes e objetos para formar estruturas maiores e sistemas mais complicados. Eles simplificam o design, identificando maneiras diretas de realizar relacionamentos entre entidades.
-
-Padrões Comportamentais: Estes padrões se preocupam com a comunicação e a delegação de tarefas entre os objetos. Eles especificam como os objetos interagem e atribuem responsabilidades, e sua comunicação se torna eficiente e flexível.
+- Padrões Criacionais: Estes padrões especificam mecanismos de criação de objetos que tornam o sistema flexível e o código reutilizável. Eles se preocupam com a forma como os objetos são criados, o que torna o sistema independente de como seus objetos são instanciados.
+- Padrões Estruturais: Estes padrões se preocupam com a estrutura de classes e objetos para formar estruturas maiores e sistemas mais complicados. Eles simplificam o design, identificando maneiras diretas de realizar relacionamentos entre entidades.
+- Padrões Comportamentais: Estes padrões se preocupam com a comunicação e a delegação de tarefas entre os objetos. Eles especificam como os objetos interagem e atribuem responsabilidades, e sua comunicação se torna eficiente e flexível.
 
 ## Padrão escolhido
 **Strategy Pattern**
@@ -186,12 +184,14 @@ python src/agent.py
 [3] - Ensino Médio
 > 2
 Digite um tópico: frações
-
+```
 ## 🧠 Conclusões
 
-- O Strategy Pattern facilita adicionar novos métodos de ensino sem mudar o fluxo do agente.
-- Separar responsabilidades (contexto vs estratégia) aumenta testabilidade.
-- Em um produto real, combinar Strategy com outros padrões (Factory para criação de estratégias, Decorator para enriquecimento de respostas) aumenta flexibilidade.
+A aplicação do Strategy Pattern nesse projeto permitiu a criação de um sistema adaptável e dinâmico, capaz de alterar dinamicamente o método de ensino de acordo com o perfil do usuário ou o ambiente de aprendizagem. Ao dividir de forma clara a lógica do agente das estratégias de ensino, o padrão facilitou um código mais organizado, que se tornou mais fácil de manter, testar e estender, como ao introduzir novos métodos de ensino sem interferir nas funcionalidades existentes.
+
+Além disso, a implementação deste padrão também destacou o encapsulamento de comportamentos e a adaptação dinâmica em sistemas de software, e mostrou como os padrões de projeto podem ser uma ferramenta útil para resolver problemas típicos de design de forma estruturada e eficiente. Apesar de uma camada adicional de abstração, os ganhos em flexibilidade, escalabilidade e clareza superaram os trade-offs, e o sistema se tornou mais robusto e preparado para desenvolvimentos futuros.
+
+Por fim, a experiência trouxe lições instrutivas sobre como equilibrar complexidade e benefícios, criar software focado no usuário e como criar sistemas que são desenvolvidos naturalmente ao longo do tempo, especialmente em sistemas de inteligência artificial e agentes adaptativos.
 
 ## Autor(es)
 Maicon Dias - 082210032.
