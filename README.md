@@ -1,6 +1,6 @@
 # 🧠 Agente Conversacional de IA para Matemática Básica
 
-## Introdução ao tema (Design Patterns)
+## 📘 Introdução ao tema (Design Patterns)
 
 Este repositório contém a implementação prática do **Strategy Pattern** aplicada a um agente conversacional de IA para ensino de matemática básica.
 
@@ -13,8 +13,8 @@ Os principais tipos de Padrões de Projeto são:
 - Padrões Estruturais: Estes padrões se preocupam com a estrutura de classes e objetos para formar estruturas maiores e sistemas mais complicados. Eles simplificam o design, identificando maneiras diretas de realizar relacionamentos entre entidades.
 - Padrões Comportamentais: Estes padrões se preocupam com a comunicação e a delegação de tarefas entre os objetos. Eles especificam como os objetos interagem e atribuem responsabilidades, e sua comunicação se torna eficiente e flexível.
 
-## Padrão escolhido
-**Strategy Pattern**
+## 💡 Padrão escolhido
+### **Strategy Pattern**
 
 No nosso projeto, temos múltiplos métodos de ensino possíveis (teórico, prático, resumido, etc.), e a escolha do método pode variar de acordo com o perfil do usuário ou o contexto do aprendizado.
 
@@ -35,7 +35,7 @@ Problemas desse approach:
 
 O Strategy Pattern resolve isso ao encapsular cada algoritmo de ensino em uma estratégia separada, permitindo trocar métodos de ensino dinamicamente sem modificar a lógica do agente.
 
-## **Strategy Pattern** na arquitetura atual
+### 🧩 **Strategy Pattern** na arquitetura atual
 
 No projeto, o AgenteConversacional atua como contexto, e cada IMetodoEnsino é uma estratégia concreta.
 
@@ -45,7 +45,7 @@ No projeto, o AgenteConversacional atua como contexto, e cada IMetodoEnsino é u
 
 Esse encaixe mantém o agente flexível, modular e fácil de estender, pois adicionar um novo método de ensino é tão simples quanto criar uma nova classe que implementa IMetodoEnsino.
 
-## **Benefícios**
+### 🚀 **Benefícios**
 
 - Flexibilidade: permite alternar estratégias em tempo de execução.
 - Manutenção facilitada: cada método de ensino é independente; alterações não afetam outras estratégias.
@@ -80,7 +80,7 @@ Personalizar o ensino de matemática de acordo com o público-alvo:
 +--------------------------+
 ```
 
-## Trechos de código ilustrativos
+## 💻 Trechos de código ilustrativos
 
 Exemplo: interface e contexto (trecho)
 ```
@@ -140,7 +140,7 @@ print(agente.ensinar("Python", {"nivel": "alto"}))
 
 ```
 
-## Estrutura do repositório
+## 📂 Estrutura do repositório
 ```
 Agente-Conversacional-Matematica/
 ├─ README.md
@@ -152,7 +152,7 @@ Agente-Conversacional-Matematica/
 └─ .gitignore
 ```
 
-## Instruções de execução e testes
+## ⚙️ Instruções de execução e testes
 
 Requisitos:
 - Python 3.8+
@@ -193,7 +193,7 @@ Além disso, a implementação deste padrão também destacou o encapsulamento d
 
 Por fim, a experiência trouxe lições instrutivas sobre como equilibrar complexidade e benefícios, criar software focado no usuário e como criar sistemas que são desenvolvidos naturalmente ao longo do tempo, especialmente em sistemas de inteligência artificial e agentes adaptativos.
 
-## Autor(es)
+## 👨‍💻 Autor(es)
 Maicon Dias - 082210032.
 Pedro Vieira - 082210025.
 Thiago Baptistella - 082210010.
