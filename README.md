@@ -185,6 +185,37 @@ python src/agent.py
 > 2
 Digite um tópico: frações
 ```
+
+### Testes
+
+Para garantir a integridade e o bom funcionamento das estratégias de ensino implementadas, o projeto inclui testes automatizados usando o módulo padrão unittest do Python.
+
+Os testes verificam:
+
+- O funcionamento individual de cada estratégia (EnsinoTeorico, EnsinoPratico, EnsinoResumido)
+- A correta associação da estratégia inicial conforme o perfil do usuário (UsuarioPerfil)
+- A troca dinâmica de estratégias em tempo de execução via set_strategy()
+
+A integridade da interface abstrata IMetodoEnsino, assegurando que não seja instanciada diretamente.
+
+🧪 Como executar os testes:
+
+No terminal, dentro do diretório do projeto, execute:
+
+```
+python -m unittest test_strategy.py
+
+```
+
+Se todos os testes passarem, você verá uma saída semelhante a:
+
+```
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
+```
 ## 🧠 Conclusões
 
 A aplicação do Strategy Pattern nesse projeto permitiu a criação de um sistema adaptável e dinâmico, capaz de alterar dinamicamente o método de ensino de acordo com o perfil do usuário ou o ambiente de aprendizagem. Ao dividir de forma clara a lógica do agente das estratégias de ensino, o padrão facilitou um código mais organizado, que se tornou mais fácil de manter, testar e estender, como ao introduzir novos métodos de ensino sem interferir nas funcionalidades existentes.
